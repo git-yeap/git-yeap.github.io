@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employee Directory</title>
+    <!-- Bootstrap, fonts and CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="container__title">awesome startup employee directory</h1>
+        <div class="search">
+            <label for="input" class="sr-only">search by name or username</label>
+            <input type="text" id="input" class="search__input" placeholder="search">
+        </div>
+        <!-- MODAL. It will only appear once the user clicks on a listing -->
+        <div class="modal">
+            <div class="modal__wrapper">
+                <div class="close">&#10006;</div>
+                <a href="#" class="prev">&#706;&#706;</a>
+                <a href="#" class="next">&#707;&#707;</a>
+                <img class="modal__profile__img" src="profile-photo.jpg" alt="">
+                <p class="profile__text profile__text--name">First Last</p>
+                <p class="profile__text profile__text--user">username</p>
+                <p class="profile__text profile__text--email">example@example.com</p>
+                <hr class="divider">
+                <div class="modal__profile__extraText">
+                    <p class="profile__text profile__text--cell">(593) 364-3249</p>
+                    <p class="profile__text profile__text--address">50 High St, City Q4000</p>
+                    <p class="profile__text">Birthday: <span class="profile__text--birth">01/04/85</span></p>
+                </div>
+            </div>
+            <div class="modal__highlight"></div>
+        </div>
+        <!-- Where all employees will added from JSON data -->
+        <section class="employees">
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

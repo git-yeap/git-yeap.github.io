@@ -1,0 +1,271 @@
+root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+@media (min-width: 320px) {
+    /*  ====================================  
+                MODAL
+====================================  */
+    .close {
+        position: absolute;
+        right: 16px;
+        top: 7px;
+        color: #bfbfbf;
+        font-size: 1.7rem;
+    }
+
+    .close:hover {
+        cursor: pointer;
+        color: #999;
+    }
+
+    .modal__highlight {
+        position: fixed;
+        background: black;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        height: 100%;
+        z-index: 100;
+        opacity: 0.5;
+    }
+
+    .modal__wrapper {
+        background-color: #fff;
+        border: 1px solid #e6e6e6;
+        border-radius: 6px;
+        max-width: 280px;
+        padding-right: 40px;
+        padding-left: 40px;
+        margin: 0 auto;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 90px;
+        z-index: 200;
+    }
+
+    .prev,
+    .next {
+        top: 50%;
+        bottom: 50%;
+        position: absolute;
+        color: #bfbfbf;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .prev {
+        left: 20px;
+    }
+
+    .next {
+        right: 20px;
+    }
+
+    .prev:hover,
+    .prev:focus,
+    .next:hover,
+    .next:focus {
+        text-decoration: none;
+        color: #999;
+    }
+
+    .modal__profile__img {
+        height: 150px;
+        border-radius: 50%;
+        margin: 30px auto 10px;
+    }
+
+    .modal__profile__extraText {
+        padding-bottom: 25px;
+    }
+
+    .divider {
+        max-width: 260px;
+    }
+    /*  ====================================  
+  MAIN SECTION - EMPLOYEES DETAILS
+====================================  */
+    .container__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .search {
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .search__input {
+        width: 100%;
+        max-width: 340px;
+        background-color: #f9f9f9;
+        border: 1px solid #e6e6e6;
+        border-radius: 6px;
+        text-align: center;
+        height: 35px;
+    }
+
+    .search__input:hover,
+    .search__input:focus {
+        background-color: #f2f2f2;
+    }
+
+    .wrapper {
+        padding: 0;
+    }
+
+    .profile:hover {
+        background-color: #f2f2f2;
+        cursor: pointer;
+        opacity: 0.9;
+        -webkit-opacity: 0.9;
+        -moz-opacity: 0.9;
+        -o-opacity: 0.9;
+        box-shadow: 2px 2px 5px #888888;
+        -webkit-box-shadow: 2px 2px 5px #888888;
+        -moz-box-shadow: 2px 2px 5px #888888;
+        -o-box-shadow: 2px 2px 5px #888888;
+    }
+
+    .profile {
+        background-color: #f9f9f9;
+        border: 1px solid #e6e6e6;
+        border-radius: 6px;
+        max-width: 340px;
+        min-height: 120px;
+        margin: 0 auto 25px;
+        transition: all 0.5s linear;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+    }
+
+    .profile__img {
+        height: 85px;
+        border-radius: 50%;
+        margin-top: 17px;
+        margin-left: -5px;
+    }
+
+    .profile__textFrame {
+        margin-top: 22px;
+        margin-left: -8px;
+        padding-left: 0;
+    }
+
+    .profile__text {
+        margin: 3px 0;
+        color: #4d4d4d;
+        text-transform: capitalize;
+        color: #666;
+        font-size: 1rem;
+    }
+
+    .profile__text--name {
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin-bottom: 3px;
+    }
+
+    .profile__text--email {
+        text-transform: none;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 400px) {
+    .container__title {
+        font-size: 1.6rem;
+    }
+
+    .profile {
+        min-height: 145px;
+    }
+
+    .profile__img {
+        height: 100px;
+        margin: 21px 0;
+    }
+
+    .profile__textFrame {
+        margin-top: 33px;
+        padding-left: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .search__input {
+        max-width: 688px;
+    }
+
+    .wrapper {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .modal__wrapper {
+        max-width: 320px;
+        top: 120px;
+    }
+}
+
+@media (min-width: 992px) {
+    .search__input {
+        max-width: 808px;
+    }
+
+    .profile__img {
+        height: 100px;
+        border-radius: 50%;
+        margin: 21px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal__wrapper {
+        top: 160px;
+    }
+
+    .search__input {
+        max-width: 1111px;
+    }
+
+    .profile {
+        max-width: 380px;
+        min-height: 160px;
+    }
+
+    .profile__img {
+        height: 120px;
+        margin: 18px 0 18px -2px;
+    }
+
+    .profile__textFrame {
+        margin-top: 40px;
+        padding-left: 10px;
+    }
+
+    .profile__text {
+        letter-spacing: 0.3px;
+    }
+
+    .profile__text--name {
+        font-size: 1.6rem;
+    }
+}
